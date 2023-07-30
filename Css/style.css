@@ -1,0 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+    text-decoration: none;
+    text-transform: none;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px; 
+    background: linear-gradient( #f57cc6 , #e08ebe, #eeb7e5);
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 400px;
+    position: absolute;
+    width: 100%;
+    background:#f395cc;
+    top: 0;
+    height: 100px;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+.logo{
+    font-weight: 1000;
+    color: #fff;
+    font-family:'Inspiration', cursive;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 10px;
+    list-style: none;
+}
+
+nav ul a{
+    color: #fff;
+    background:#f57cc6;
+    font-weight: 700;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+nav ul a:hover{
+    background: #fff;
+    color:#f57cc6;
+    transition: 0.5s;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 100px;
+    width: 100%;
+    color: #f57cc6;
+    height: 90vh;
+}
+
+.text{
+    width: 700px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+    margin-right: 100px;
+    gap: 10px 0;
+    color: #fff;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+button{
+    color: #fff;
+    background:#eeb7e5;
+    font-weight: 700;
+    padding: 10px 5px;
+    border-radius: 10px;
+    border: 2px solid #fff;
+    cursor: pointer;
+}
+
+button:hover{
+    background: #fff;
+    color:#e08ebe;
+    transition: 0.5s;
+}
+
+.carousel{
+    width: 30%;
+    height: 600px;
+}
+
+.box{
+    margin-top: 200px;
+    margin-left: 200px;
+    width: 150px;
+    height: 150px;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotating 20s linear infinite;
+}
+
+@keyframes rotating{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+    100%{
+        transform: perspective(1000px) rotateY(300deg);
+    }
+}
+
+.box span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    -webkit-box-reflect: below 0px
+    linear-gradient(transparent,
+    transparent, #f57cc6);
+    transform: rotateY(calc(var(--i)*45deg))
+    translateZ(200px);
+}
+
+.box span img{
+    position: relative;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    object-fit: contain;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:#f395cc;
+    width: 100%;
+    height: 15vh;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+
+/*Contact Us forms*/
+
+input[type=text], input[type=email], input[type=submit] {
+    align-items: center;
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing:border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+  }
+  
+  input[type=text]:focus {
+    border: 3px solid #555;
+  }
+  
+  .form {
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: 20px;
+    
+  }
+  label {
+    display: inline-block;
+    
+  }
+  input {
+    display: inline-block;
+  }
+  
+  

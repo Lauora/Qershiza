@@ -194,3 +194,36 @@ background: #6dd8f0;
              color: #fff;
             font-weight: 600;
             }
+
+            /* Styles for screens up to 600px (typical for phones) */
+@media (max-width: 600px) {
+    body {
+        font-size: 16px; /* Decrease font size for smaller screens */
+    }
+    .description {
+        width: 80%; /* Wider description section for better readability on small screens */
+    }
+    /* Add other responsive styles for smaller screens */
+}
+
+/* Styles for screens between 601px and 1024px (typical for tablets) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    body {
+        font-size: 18px; /* Adjust font size for medium-sized screens */
+    }
+    .description {
+        width: 50%; /* Narrower description section for tablets */
+    }
+    /* Add other responsive styles for medium-sized screens */
+}
+
+/* Styles for screens above 1024px (typical for desktops) */
+@media (min-width: 1025px) {
+    body {
+        font-size: 20px; /* Increase font size for larger screens */
+    }
+    .description {
+        width: 36%; /* Default width for desktop screens */
+    }
+    /* Add other responsive styles for larger screens */
+}
